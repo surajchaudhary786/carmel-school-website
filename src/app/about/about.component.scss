@@ -1,0 +1,63 @@
+/* General Styling */
+.message-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Individual Message Card */
+  .message-card {
+    display: flex;
+    flex: 1 1 45%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  /* Profile Photo Styling */
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  /* Message Content */
+  .message-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .message-content h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .message-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .message-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-photo {
+      margin: 10px 0;
+    }
+  }
+  
