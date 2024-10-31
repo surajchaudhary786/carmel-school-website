@@ -1,0 +1,30 @@
+/* Banner container styling */
+.banner-container {
+    color: #000;               /* Black text color */
+    font-size: 2em;          /* Increase font size */
+    font-weight: bold;         /* Bold text */
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Scrolling text styling */
+.banner-text {
+    white-space: nowrap;
+    color: inherit;               /* Inherits container color */
+    text-decoration: none;         /* Removes underline */
+    animation: scrollText 10s linear infinite; /* Infinite scroll */
+}
+
+/* Keyframes for scroll animation */
+@keyframes scrollText {
+    0% { right: -100%; }
+    100% { right: 100%; }
+}
+
+/* Hover effect for better UX */
+.banner-text:hover {
+    text-decoration: underline;
+}

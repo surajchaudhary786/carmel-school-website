@@ -5,12 +5,13 @@ import { CarouselComponent } from "./carousel/carousel.component";
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from "./main/main.component";  // Import CommonModule
+import { MainComponent } from "./main/main.component";
+import { ScrollingBannerComponent } from "./scrolling-banner/scrolling-banner.component";  // Import CommonModule
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, FooterComponent, CarouselComponent, CommonModule, MainComponent],
+  imports: [RouterOutlet, RouterLink, FooterComponent, CarouselComponent, CommonModule, MainComponent, ScrollingBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
